@@ -18,10 +18,10 @@ SSL_V3_EXT="$SSL_DIR/v3.ext"
 POSTGRES_CONF_FILE="$PGDATA/postgresql.conf"
 
 # Use sudo to create the directory as root
-sudo mkdir -p "$SSL_DIR"
+mkdir -p "$SSL_DIR"
 
 # Use sudo to change ownership as root
-sudo chown postgres:postgres "$SSL_DIR"
+chown postgres:postgres "$SSL_DIR"
 
 # Generate self-signed 509v3 certificates
 # ref: https://www.postgresql.org/docs/16/ssl-tcp.html#SSL-CERTIFICATE-CREATION
